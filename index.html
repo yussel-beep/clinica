@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Clínica Veterinaria El refugio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#citas">Citas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="servicios">
+        <div class="container">
+            <h2>Servicios</h2>
+            <p>Lista de servicios ofrecidos por la clínica veterinaria El refugio.</p>
+            <ul>
+                <li>Consultas generales</li>
+                <li>Vacunación y desparasitación</li>
+                <li>Cirugía veterinaria</li>
+                <li>Atención a emergencias</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="ubicacion">
+        <div class="container">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15032.162311001863!2d-99.103586!3d19.6255629!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f4004f0364f7%3A0x1d61381634a9ec93!2sVeterinaria%20%22El%20Refugio%22!5e0!3m2!1ses-419!2smx!4v1720678052107!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Inserta aquí un mapa o una descripción de la ubicación de la clínica.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="citas">
+        <div class="container">
+            <h2>Solicitar Cita</h2>
+            <form action="citas.php" method="post">
+                <label for="nombre-cita">Nombre completo:</label>
+                <input type="text" id="nombre-cita" name="nombre-cita" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="fecha">Fecha de la cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <button type="submit">Solicitar Cita</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clínica Veterinaria. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
